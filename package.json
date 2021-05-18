@@ -1,0 +1,16 @@
+{
+  "name": "cp-badges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "badgen": "^3.2.2",
+    "express-rate-limit": "^5.2.6"
+  }
+}
