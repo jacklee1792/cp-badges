@@ -58,13 +58,13 @@ const getCodeforcesRating = (username) => new Promise((resolve, reject) => {
 const getDmojColor = (rating) => {
   if (typeof rating == 'undefined' || rating < 1000) {
     return 'grey';
-  } else if (rating < 1200) {
+  } else if (rating < 1300) {
     return 'green';
-  } else if (rating < 1500) {
+  } else if (rating < 1600) {
     return 'blue';
-  } else if (rating < 1800) {
+  } else if (rating < 1900) {
     return 'purple';
-  } else if (rating < 2200) {
+  } else if (rating < 2400) {
     return 'yellow';
   } else if (rating < 3000) {
     return 'red';
