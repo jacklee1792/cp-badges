@@ -128,6 +128,7 @@ const codeforcesLogo = 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwh
 
 app.get('/dmoj/:username', (req, res) => {
   res.setHeader('content-type', 'image/svg+xml');
+  res.setHeader('Cache-Control', ['no-cache', 'no-store']);
   getDmojRating(req.params.username)
     .then(rating => {
       const svgString = badgen.badgen({
@@ -142,6 +143,7 @@ app.get('/dmoj/:username', (req, res) => {
 
 app.get('/codeforces/:username', (req, res) => {
   res.setHeader('content-type', 'image/svg+xml');
+  res.setHeader('Cache-Control', ['no-cache', 'no-store']);
   getCodeforcesRating(req.params.username)
     .then(rating => {
       const svgString = badgen.badgen({
